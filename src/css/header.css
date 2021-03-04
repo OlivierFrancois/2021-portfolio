@@ -1,0 +1,11 @@
+header {
+  background-image: url("../../ressources/bg_header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60% 50%;
+  background-attachment: fixed;
+}
+
+.header-text {
+  text-shadow: 0 0 10px #333, 0 0 10px #333, 0 0 10px #333;
+}

@@ -1,0 +1,51 @@
+nav {
+  @apply fixed top-0;
+}
+
+.nav-side-menu {
+  @apply bg-gray-700 h-screen w-72 flex flex-col items-center justify-evenly;
+}
+
+.nav-logo {
+  @apply w-40 h-40 bg-gray-50 rounded-3xl;
+}
+
+.nav-list {
+  @apply flex flex-col justify-center items-center text-gray-50 font-poppins text-2xl;
+}
+
+.nav-horizontal-divider {
+  @apply bg-gray-400 w-10/12 h-1;
+}
+
+.nav-item::after {
+  content: "";
+  display: block;
+  width: 0px;
+  margin: 5px auto 0 auto;
+  height: 2px;
+  border-radius: 2px;
+  background: #333;
+  transition: all 0.2s ease-out;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+  @apply bg-cyan-400;
+}
+
+.media {
+  @apply my-2 mx-1 relative w-14 h-14 rounded-lg cursor-pointer;
+}
+.media:hover {
+  transition: all 0.5s ease-out;
+  @apply bg-gray-900;
+}
+.media img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @apply w-10/12;
+}
