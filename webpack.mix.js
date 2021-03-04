@@ -1,4 +1,6 @@
 let mix = require("laravel-mix");
 
-mix.js("src/js/index.js", "dist/js/app.js");
-mix.sass("src/scss/main.scss", "dist/css/app.css");
+mix.js("src/js/index.js", "public/js")
+    .postCss("src/css/main.css", "public/css", [
+        require("tailwindcss"),
+    ]);
