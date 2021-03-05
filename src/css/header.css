@@ -10,4 +10,7 @@ header {
 
 .header-text {
   text-shadow: 0 0 10px #333, 0 0 10px #333, 0 0 10px #333;
+  @apply font-poppins font-bold text-white mb-10 ml-5 text-4xl;
+  @apply sm:ml-24 sm:text-6xl;
+  @apply lg:text-8xl;
 }
