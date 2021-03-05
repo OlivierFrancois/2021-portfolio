@@ -2,20 +2,20 @@
   @apply text-4xl mb-5;
 }
 .texts-area h2 {
-  @apply text-xl;
+  @apply text-xl font-bold;
 }
 .texts-area p {
   @apply text-base;
 }
 
 .lists-area h2 {
-  @apply text-xl;
+  @apply text-xl font-bold;
 }
 .lists-area ul {
   @apply text-lg;
 }
 .lists-area ul li {
-  @apply text-base ml-10;
+  @apply text-base ml-5;
   transition: all 0.2s ease-out;
 }
 .lists-area ul li:hover {

@@ -4,6 +4,8 @@ header {
   background-size: cover;
   background-position: 60% 50%;
   background-attachment: fixed;
+
+  @apply h-60 xl:ml-72 border-b-8 border-gray-300;
 }
 
 .header-text {

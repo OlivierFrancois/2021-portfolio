@@ -7,7 +7,14 @@
   \*************************/
 /***/ (() => {
 
+var nav = document.querySelector('nav');
+var btnMenu = document.querySelector('.toggle-nav');
+var lines = document.querySelector('.cont-lines'); //Quand on clique sur le bouton, toggle des class pour faire disparaitre le nav
 
+btnMenu.addEventListener('click', function () {
+  lines.classList.toggle('active');
+  nav.classList.toggle('menu-visible');
+});
 
 /***/ }),
 

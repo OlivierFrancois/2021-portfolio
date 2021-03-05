@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header class="h-60 ml-72 border-b-8 border-gray-300">
+    <header>
         <div class="flex items-end h-full w-full">
             <p class="header-text text-8xl font-poppins font-bold text-white mb-10 ml-24">
                 Olivier François
@@ -57,7 +57,15 @@
         </div>
     </nav>
 
-    <main class="h-full ml-72">
+    <main class="h-full">
+
+        <!-- Toggle du menu pour < xl -->
+        <div class="toggle-nav">
+            <div class="cont-lines">
+                <div class="single-line"></div>
+            </div>
+        </div>
+
         <section class="pl-32 pt-5">
             <h1 class="section-title">Bienvenue sur mon portfolio !</h1>
             
@@ -83,14 +91,14 @@
                 
                 <div class="lists-area w-5/12" >
                     <h2>Quelques mots clés...</h2>
-                    <ul class="my-5">Back-End
+                    <ul class="my-5"><span class="font-bold">Back-End</span>
                         <li>Laravel</li>
                         <li>PhP (Objet)</li>
                         <li>SQL</li>
                         <li>Composer</li>
                     </ul>
 
-                    <ul class="my-5">Front-End
+                    <ul class="my-5"><span class="font-bold">Front-End</span>
                         <li>React</li>
                         <li>HTML, CSS</li>
                         <li>Javascript</li>

@@ -1,5 +1,51 @@
+/************** BOUTON NAV **************/
+.toggle-nav {
+  @apply w-14 h-14 bg-gray-700 rounded-full fixed z-10 top-2 left-2;
+}
+
+.cont-lines {
+  @apply w-7 h-7 cursor-pointer absolute top-1/2 left-1/2;
+  transform: translate(-50%, -50%);
+}
+
+.single-line {
+  @apply w-full h-1 bg-gray-50 rounded-lg;
+  @apply absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.single-line::before {
+  content: "";
+  @apply w-full h-1 bg-gray-50 rounded-lg;
+  @apply absolute;
+}
+.single-line::after {
+  content: "";
+  @apply w-full h-1 bg-gray-50 rounded-lg;
+  @apply absolute;
+}
+
+.cont-lines.active .single-line::after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 300ms ease, transform 300ms 300ms ease;
+}
+
+.cont-lines.active .single-line {
+  background: transparent;
+}
+
+.cont-lines.active .single-line::before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms ease, transform 300ms 300ms ease;
+}
+
+/************** NAV **************/
 nav {
   @apply fixed top-0;
+  @apply -left-72 xl:-left-0;
 }
 
 .nav-side-menu {

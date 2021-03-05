@@ -18,4 +18,5 @@ body {
 
 main {
   flex: 1;
+  @apply xl:ml-72;
 }
