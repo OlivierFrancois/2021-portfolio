@@ -1,6 +1,7 @@
 /************** BOUTON NAV **************/
 .toggle-nav {
-  @apply w-14 h-14 bg-gray-700 rounded-full fixed z-10 top-2 left-2;
+  @apply w-14 h-14 bg-gray-800 rounded-full border-gray-700 border-2 fixed z-10 top-2 left-2;
+  @apply xl:hidden;
 }
 
 .cont-lines {
