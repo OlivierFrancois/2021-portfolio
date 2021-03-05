@@ -14,38 +14,44 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  transition: all 500ms ease-out;
 }
 .single-line::before {
   content: "";
-  @apply w-full h-1 bg-gray-50 rounded-lg;
+  @apply w-full h-1 bg-gray-50 rounded-lg top-2;
   @apply absolute;
+  transition: top 300ms ease, transform 300ms 300ms ease;
 }
 .single-line::after {
   content: "";
-  @apply w-full h-1 bg-gray-50 rounded-lg;
+  @apply w-full h-1 bg-gray-50 rounded-lg -top-2;
   @apply absolute;
-}
-
-.cont-lines.active .single-line::after {
-  top: 0;
-  transform: rotate(45deg);
   transition: top 300ms ease, transform 300ms 300ms ease;
 }
 
 .cont-lines.active .single-line {
   background: transparent;
 }
-
+.cont-lines.active .single-line::after {
+  top: 0;
+  transform: rotate(45deg);
+}
 .cont-lines.active .single-line::before {
-  bottom: 0;
+  top: 0;
   transform: rotate(-45deg);
-  transition: bottom 300ms ease, transform 300ms 300ms ease;
 }
 
 /************** NAV **************/
 nav {
   @apply fixed top-0;
   @apply -left-72 xl:-left-0;
+
+  transition: left 300ms ease;
+}
+
+nav.menu-visible {
+  @apply left-0;
 }
 
 .nav-side-menu {
