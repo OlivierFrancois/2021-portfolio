@@ -1,23 +1,58 @@
+.section-home {
+  @apply pt-5;
+  @apply lg:px-32;
+}
+
 .section-title {
-  @apply text-4xl mb-5;
+  @apply ml-5 text-4xl mb-5;
+}
+
+.section-home-container {
+  @apply bg-gray-100 p-5 flex justify-around flex-col;
+  @apply sm:flex-col-reverse;
+  @apply lg:flex-row;
+  @apply lg:rounded-xl lg:border-gray-50 lg:border-8;
+}
+
+.texts-area {
+  @apply w-full lg:w-7/12 mb-5;
+  @apply sm:mb-0 sm:mt-8;
+  @apply lg:mt-0;
 }
 .texts-area h2 {
   @apply text-xl font-bold;
+  @apply xl:text-2xl;
 }
 .texts-area p {
   @apply text-base;
 }
 
-.lists-area h2 {
-  @apply text-xl font-bold;
+.skills-area {
+  @apply w-full;
+  @apply lg:w-5/12;
 }
-.lists-area ul {
-  @apply text-lg;
+.skills-area h2 {
+  @apply text-xl font-bold w-full mb-3;
+  @apply xl:text-2xl;
 }
-.lists-area ul li {
-  @apply text-base ml-5;
-  transition: all 0.2s ease-out;
+.skills {
+  @apply flex flex-wrap justify-around lg:flex-col flex-1 h-full;
+  @apply md:justify-center;
+  @apply lg:justify-around;
 }
-.lists-area ul li:hover {
-  @apply text-base pl-5;
+.skills-row {
+  @apply flex justify-center;
+}
+.skills-row:first-child {
+  @apply lg:mt-5;
+}
+.skills-row:last-child {
+  @apply lg:mb-5;
+}
+
+.skill {
+  @apply w-24 h-24 m-1;
+}
+.skill img {
+  @apply w-full h-full;
 }
