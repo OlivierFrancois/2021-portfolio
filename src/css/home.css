@@ -37,7 +37,7 @@
 }
 .skills {
   @apply flex flex-wrap justify-around lg:flex-col flex-1 h-full;
-  @apply md:justify-center;
+  @apply sm:justify-center;
   @apply lg:justify-around;
 }
 .skills-row {
