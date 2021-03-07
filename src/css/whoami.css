@@ -1,0 +1,54 @@
+.section-whoami-general {
+  @apply bg-gray-100 flex justify-around flex-col min-h-fullWithoutHeader;
+  @apply px-5 sm:px-32;
+  @apply lg:flex-row py-5;
+}
+
+.whoami-text {
+  @apply w-full;
+  @apply lg:w-7/12;
+}
+.whoami-text p {
+  @apply text-base 2xl:text-lg;
+}
+
+.whoami-text h1 {
+  @apply text-4xl font-bold w-full text-center mb-10;
+}
+.whoami-text h1::after {
+  content: "";
+  display: block;
+
+  @apply mx-auto mt-2 w-1/6 h-0.5 bg-cyan-700;
+  transition: all 0.3s ease-in-out;
+}
+.whoami-text:hover h1::after {
+  @apply w-5/6;
+}
+
+.whoami-skills {
+  @apply w-full flex justify-center;
+  @apply lg:w-5/12;
+}
+.whoami-skills ul {
+  @apply h-full inline-block;
+  @apply lg:mt-28;
+}
+.whoami-skills li {
+  @apply flex items-center text-2xl my-5 relative;
+  transition: all 0.3s ease-in-out;
+}
+.whoami-skills li p {
+  @apply left-0 relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.whoami-skills li span {
+  @apply text-4xl mr-5 font-poppins font-extrabold text-current;
+}
+.whoami-skills li:hover {
+  @apply text-cyan-600;
+}
+.whoami-skills li:hover p {
+  @apply left-5 sm:left-10;
+}

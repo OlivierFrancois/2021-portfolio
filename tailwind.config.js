@@ -11,6 +11,14 @@ module.exports = {
       },
       colors: {
         cyan: colors.cyan
+      },
+      height: {
+        header: '15rem',
+        fullWithoutHeader: 'calc(100vh - 15rem)',
+      },
+      minHeight: {
+        header: '15rem',
+        fullWithoutHeader: 'calc(100vh - 15rem)',
       }
     },
   },

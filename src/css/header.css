@@ -5,12 +5,13 @@ header {
   background-position: 60% 50%;
   background-attachment: fixed;
 
-  @apply h-60 xl:ml-72 border-b-8 border-gray-300;
+  @apply h-header xl:ml-72 border-b-8 border-gray-300;
 }
 
 .header-text {
   text-shadow: 0 0 10px #333, 0 0 10px #333, 0 0 10px #333;
-  @apply font-poppins font-bold text-white mb-10 ml-5 text-4xl;
+  @apply font-poppins font-bold text-white mb-10 ml-5 text-5xl;
   @apply sm:ml-24 sm:text-6xl;
+  @apply md:text-7xl;
   @apply lg:text-8xl;
 }

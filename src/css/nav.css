@@ -45,7 +45,7 @@
 
 /************** NAV **************/
 nav {
-  @apply fixed top-0;
+  @apply fixed top-0 z-10;
   @apply -left-72 xl:-left-0;
 
   transition: left 300ms ease;

@@ -24,7 +24,7 @@
   @apply xl:text-2xl;
 }
 .texts-area p {
-  @apply text-base;
+  @apply text-base 2xl:text-lg;
 }
 
 .skills-area {
@@ -32,8 +32,9 @@
   @apply lg:w-5/12;
 }
 .skills-area h2 {
-  @apply text-xl font-bold w-full mb-3;
+  @apply text-xl font-bold w-full mb-10 text-center;
   @apply xl:text-2xl;
+  @apply lg:mb-3;
 }
 .skills {
   @apply flex flex-wrap justify-around lg:flex-col flex-1 h-full;
@@ -41,7 +42,8 @@
   @apply lg:justify-around;
 }
 .skills-row {
-  @apply flex justify-center;
+  @apply flex justify-center my-3;
+  @apply lg:my-0;
 }
 .skills-row:first-child {
   @apply lg:mt-5;
@@ -51,8 +53,12 @@
 }
 
 .skill {
-  @apply w-24 h-24 m-1;
+  @apply w-24 h-24 mx-5 m-1 relative;
 }
 .skill img {
-  @apply w-full h-full;
+  @apply w-full h-full absolute top-0;
+  transition: all 0.3s ease-in-out;
+}
+.skill img:hover {
+  @apply -top-5;
 }

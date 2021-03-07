@@ -7,6 +7,7 @@
 @import "footer";
 
 @import "home";
+@import "whoami";
 
 /* background-image: linear-gradient(to right, #29323c, #485563); */
 
@@ -19,4 +20,10 @@ body {
 main {
   flex: 1;
   @apply xl:ml-72;
+}
+
+/* Commun à toutes les sections */
+
+.section-title {
+  @apply ml-5 text-4xl mb-5;
 }
