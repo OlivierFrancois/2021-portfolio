@@ -18,6 +18,7 @@ module.exports = {
       },
       minHeight: {
         header: '15rem',
+        header: '15rem',
         fullWithoutHeader: 'calc(100vh - 15rem)',
       }
     },

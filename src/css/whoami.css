@@ -1,38 +1,45 @@
+/************************ BLOC "QUI SUIS-JE" ************************/
 .section-whoami-general {
-  @apply bg-gray-100 flex justify-around flex-col min-h-fullWithoutHeader;
-  @apply px-5 sm:px-32;
-  @apply lg:flex-row py-5;
+  @apply bg-gray-100 min-h-fullWithoutHeader;
+  @apply px-5 sm:px-16 xl:px-32;
+  @apply py-5;
 }
-
-.whoami-text {
-  @apply w-full;
-  @apply lg:w-7/12;
+.section-whoami-general h1 {
+  @apply h-auto text-4xl font-bold w-full text-center mb-10;
 }
-.whoami-text p {
-  @apply text-base 2xl:text-lg;
-}
-
-.whoami-text h1 {
-  @apply text-4xl font-bold w-full text-center mb-10;
-}
-.whoami-text h1::after {
+.section-whoami-general h1::after {
   content: "";
   display: block;
 
-  @apply mx-auto mt-2 w-1/6 h-0.5 bg-cyan-700;
+  @apply mx-auto mt-2 w-2/6 h-1 bg-cyan-700;
   transition: all 0.3s ease-in-out;
 }
-.whoami-text:hover h1::after {
-  @apply w-5/6;
+.section-whoami-general:hover h1::after {
+  @apply w-4/6;
 }
 
+/******* BLOC ENGLOBANT texte + liste *******/
+.section-whoami-general > div {
+  @apply flex justify-around flex-col p-5;
+  @apply lg:flex-row;
+}
+
+/*** texte ***/
+.whoami-text {
+  @apply w-full flex flex-col justify-center;
+  @apply lg:w-7/12;
+}
+.whoami-text p {
+  @apply text-base 2xl:text-lg my-5;
+}
+
+/*** skills ***/
 .whoami-skills {
-  @apply w-full flex justify-center;
-  @apply lg:w-5/12;
+  @apply w-full;
+  @apply lg:w-4/12;
 }
 .whoami-skills ul {
-  @apply h-full inline-block;
-  @apply lg:mt-28;
+  @apply h-full w-full flex flex-col justify-center;
 }
 .whoami-skills li {
   @apply flex items-center text-2xl my-5 relative;
@@ -42,7 +49,6 @@
   @apply left-0 relative;
   transition: all 0.3s ease-in-out;
 }
-
 .whoami-skills li span {
   @apply text-4xl mr-5 font-poppins font-extrabold text-current;
 }
@@ -51,4 +57,61 @@
 }
 .whoami-skills li:hover p {
   @apply left-5 sm:left-10;
+}
+
+/************************ BLOC "EXPERIENCES" ************************/
+.section-whoami-experiences {
+  @apply px-5 sm:px-32;
+  @apply min-h-screen bg-gray-500 pt-5;
+}
+
+.section-whoami-experiences h2 {
+  @apply text-4xl text-center font-poppins text-gray-100 font-extrabold mb-5;
+}
+.section-whoami-experiences h2::after {
+  content: "";
+  display: block;
+
+  @apply mx-auto mt-2 w-2/6 h-1 bg-cyan-300;
+  transition: all 0.3s ease-in-out;
+}
+.section-whoami-experiences:hover h2::after {
+  @apply w-4/6;
+}
+
+.experiences-container {
+  @apply relative w-3/4 p-16 overflow-hidden mx-auto;
+}
+.experiences-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  @apply h-full w-2 left-6 bg-gray-400;
+}
+.card-experience {
+  @apply h-44 mb-10 relative;
+}
+.card-experience .experience-icon {
+  @apply absolute w-14 h-14 -left-16 rounded-full border border-gray-900 bg-gray-100;
+}
+.card-experience .experience-icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @apply w-8/12;
+}
+.card-experience .experience-content {
+  @apply p-5 w-full h-full absolute -top-2 left-2 bg-gray-100 border-2 border-gray-600 overflow-scroll;
+  scrollbar-color: #004e4e transparent;
+  scrollbar-width: thin;
+  transition: all 0.2s ease-out;
+}
+.card-experience .experience-content:hover {
+  @apply -top-0 left-0 bg-gray-100;
+}
+
+.card-experience .experience-content p {
+  @apply my-2;
 }
