@@ -62,7 +62,7 @@
 /************************ BLOC "EXPERIENCES" ************************/
 .section-whoami-experiences {
   @apply px-5 sm:px-32;
-  @apply min-h-screen bg-gray-500 pt-5;
+  @apply min-h-screen bg-gray-700 pt-5;
 }
 
 .section-whoami-experiences h2 {
@@ -72,7 +72,7 @@
   content: "";
   display: block;
 
-  @apply mx-auto mt-2 w-2/6 h-1 bg-cyan-300;
+  @apply mx-auto mt-2 w-2/6 h-1 bg-cyan-500;
   transition: all 0.3s ease-in-out;
 }
 .section-whoami-experiences:hover h2::after {
