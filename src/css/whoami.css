@@ -61,7 +61,7 @@
 
 /************************ BLOC "EXPERIENCES" ************************/
 .section-whoami-experiences {
-  @apply px-5 sm:px-32;
+  @apply px-2 sm:px-16 md:px-24 lg:px-32 2xl:px-40;
   @apply min-h-screen bg-gray-700 pt-5;
 }
 
@@ -72,7 +72,7 @@
   content: "";
   display: block;
 
-  @apply mx-auto mt-2 w-2/6 h-1 bg-cyan-500;
+  @apply mx-auto mt-2 w-2/6 h-1 bg-cyan-100;
   transition: all 0.3s ease-in-out;
 }
 .section-whoami-experiences:hover h2::after {
@@ -80,7 +80,8 @@
 }
 
 .experiences-container {
-  @apply relative w-3/4 p-16 overflow-hidden mx-auto;
+  @apply pl-16 pr-5 relative overflow-hidden mx-auto;
+  @apply 2xl:w-3/4;
 }
 .experiences-container::before {
   content: "";
@@ -89,7 +90,8 @@
   @apply h-full w-2 left-6 bg-gray-400;
 }
 .card-experience {
-  @apply h-44 mb-10 relative;
+  @apply h-80 mb-10 relative;
+  @apply sm:h-44;
 }
 .card-experience .experience-icon {
   @apply absolute w-14 h-14 -left-16 rounded-full border border-gray-900 bg-gray-100;
