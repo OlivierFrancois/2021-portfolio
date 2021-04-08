@@ -1,0 +1,40 @@
+/************************ BLOC "QUI SUIS-JE" ************************/
+.section-projects-general {
+  @apply bg-gray-100 min-h-fullWithoutHeader;
+  @apply px-5 sm:px-16 xl:px-32;
+  @apply py-5;
+}
+.section-projects-general h1 {
+  @apply h-auto text-4xl font-bold w-full text-center mb-10;
+}
+.section-projects-general h1::after {
+  content: "";
+  display: block;
+
+  @apply mx-auto mt-2 w-2/6 h-1 bg-cyan-700;
+  transition: all 0.3s ease-in-out;
+}
+.section-projects-general:hover h1::after {
+  @apply w-4/6;
+}
+
+.project-card {
+  @apply w-96 h-96 overflow-scroll my-5 rounded;
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.project-card-header {
+  @apply h-1/2 bg-pink-600 overflow-hidden;
+}
+.project-card-body {
+  @apply p-2;
+}
+.project-card-body h3 {
+  @apply font-bold font-poppins text-gray-900 text-2xl mb-2;
+}
+.project-card-body p {
+  @apply my-4;
+}
+.project-card-body a {
+  @apply underline text-blue-600;
+}
