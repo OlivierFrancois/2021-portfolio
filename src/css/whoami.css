@@ -143,7 +143,7 @@
   @apply 2xl:w-8/12 2xl:mx-auto;
 }
 .skill-card-icon {
-  @apply w-0 flex items-center bg-gray-800 rounded-l-xl;
+  @apply w-0 flex items-center bg-gray-800 rounded-l-xl overflow-hidden;
   @apply sm:p-2 sm:w-4/12;
   @apply md:p-5 md:w-3/12;
   @apply 2xl:w-2/12;

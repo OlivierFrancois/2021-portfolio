@@ -17,14 +17,18 @@
 .section-projects-general:hover h1::after {
   @apply w-4/6;
 }
-
+.project-cards-container {
+  @apply flex flex-wrap justify-around;
+}
 .project-card {
-  @apply w-96 h-96 overflow-scroll my-5 rounded;
+  @apply w-80 2xl:w-96 h-96 overflow-scroll my-5 rounded mx-2;
+  scrollbar-color: #004e4e transparent;
+  scrollbar-width: thin;
 
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 .project-card-header {
-  @apply h-1/2 bg-pink-600 overflow-hidden;
+  @apply h-auto bg-pink-600 overflow-hidden;
 }
 .project-card-body {
   @apply p-2;
