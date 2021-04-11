@@ -1,0 +1,63 @@
+/************************ BLOC "CONTACT" ************************/
+.section-contact-general {
+  @apply bg-gray-100 min-h-fullWithoutHeader;
+  @apply px-5 sm:px-16 xl:px-32;
+  @apply py-5;
+}
+.section-contact-general h1 {
+  @apply h-auto text-4xl font-bold w-full text-center mb-10;
+}
+.section-contact-general h1::after {
+  content: "";
+  display: block;
+
+  @apply mx-auto mt-2 w-2/6 h-1 bg-cyan-700;
+  transition: all 0.3s ease-in-out;
+}
+.section-contact-general:hover h1::after {
+  @apply w-4/6;
+}
+
+.container-form {
+  @apply my-0 mx-auto w-8/12;
+}
+
+.form-groupe {
+  @apply relative flex mb-10 justify-center items-center;
+}
+.form-groupe label {
+  @apply absolute top-1/2 left-0 transform translate-y-1/2 text-gray-400 text-xl;
+  transition: 0.4s ease-out;
+}
+.form-groupe input,
+.form-groupe div {
+  @apply block w-full py-2 border-none outline-none bg-none text-gray-700 text-xl;
+  transition: 0.4s ease-out;
+}
+textarea {
+  @apply w-full h-48 rounded p-1 resize-none outline-none text-xl bg-gray-200;
+  transition: 0.4s all ease-out;
+}
+textarea::placeholder {
+  @apply text-xl opacity-50;
+}
+textarea:focus {
+  @apply border-blue-400;
+  border-color: #8b97d7;
+}
+.form-groupe:nth-child(4) {
+  @apply mb-6 justify-start;
+}
+.button-sub {
+  @apply block w-auto py-4 px-14 rounded-full text-xl font-medium cursor-pointer mx-auto bg-white;
+  border: 3px solid rgb(144 144 144);
+  transition: 0.2s all ease-out;
+}
+.button-sub:hover {
+  @apply bg-gray-700 border-gray-300 border-solid border-2 text-gray-50;
+}
+
+.form-groupe:focus-within label,
+.form-groupe.animation label {
+  @apply left-10 text-blue-500;
+}
